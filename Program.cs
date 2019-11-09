@@ -93,6 +93,8 @@ namespace NumberBoxPuzzleConsole
             {
                 Console.WriteLine("\n\n        Sorry, I thought we are having fun. :(");
             }
+
+            Console.ReadKey();
         } // end of main method
 
 
