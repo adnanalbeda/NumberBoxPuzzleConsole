@@ -86,15 +86,17 @@ namespace NumberBoxPuzzleConsole
             Console.CursorTop += 3;
             if (Controller.Win)
             {
-                Console.WriteLine("You won!");
+                Console.WriteLine("Enter your name: ");
+                string name = Console.ReadLine();
+                Console.WriteLine("You won, {0}!", name);
                 Console.WriteLine("\tScore:\t" + stopwatch.ElapsedMilliseconds / 1000 + "\tseconds!");
             }
             else
             {
                 Console.WriteLine("\n\n        Sorry, I thought we are having fun. :(");
             }
-
-            Console.ReadKey();
+            Console.WriteLine("Press any key to quit...");
+            Console.ReadKey(true);
         } // end of main method
 
 
